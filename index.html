@@ -1,18 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
-        <div class="card">
-            <h3>Adama doucoure</h3>
-            <p>I'm a Web Developer and trainer English and Programmation</p>
-            <img src="photoAdamaDoucoure.jpg" alt="adama doucoure">
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Application School Management</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="container">
+        <header>
+          <h1 class="text-center fw-bold">Form@Tech</h1>
+          <p class="text-primary fst-italic">Venez au Form@Tech et Devenez meuilleur en Tech et Langage</p>
+        </header>
+
+        <section class="row mt-4">
+
+          <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center">
+              <h3 class="text-primary">A propos Form@Tech</h3>
+              <p>Form@Tech est un centre de formation au Mali pour aider les jeunes maliens a developper 
+                leur competences et devenez meuiller versions d'eux même</p>
+              <img src="Form@Tech.jpg" alt="Form@Tech" width="200" class="mb-4">
+              <button class="btn btn-primary text-center">Contact nous</button>
+
+          </div>
+
+           <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center">
+              <h3 class="text-primary">A propos nos Formations</h3>
+              <p>Form@Tech propos de formations telque les Design et logos avec création des sites web et application web
+                 en plus des formations au langues</p>
+              <img src="form.png" alt="Form@Tech" width="200" class="mb-4">
+              <button class="btn btn-primary text-center">Formez vous</button>
+
+          </div>
+
+              <div class="col-12 col-md-4 text-center d-flex flex-column align-items-center">
+              <h3 class="text-primary">Contactez nous</h3>
+              <p>Contactez nous pour plusieurs informations:</p>
+               <form>
+        <!-- Nom complet -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom complet</label>
+          <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
         </div>
-    </main>
-</body>
-</html>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+        </div>
+
+        <!-- Mot de passe -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe">
+        </div>
+
+        <!-- Sélection -->
+        <div class="mb-3">
+          <label for="role" class="form-label">Rôle</label>
+          <select class="form-select" id="role">
+            <option selected>Choisir...</option>
+            <option value="1">Utilisateur</option>
+            <option value="2">Admin</option>
+            <option value="3">Modérateur</option>
+          </select>
+        </div>
+
+        <!-- Case à cocher -->
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="agree">
+          <label class="form-check-label" for="agree">J'accepte les termes et conditions</label>
+        </div>
+
+        <!-- Bouton -->
+        <button type="submit" class="btn btn-primary">S'inscrire</button>
+      </form>
+
+          </div>
+        </section>
+        <footer class="mt-5 bg-dark text-light fst-italic text-center py-4">
+  <p>© 2025 Form@Tech – Tous droits réservés</p>
+  <p>
+    <a href="#" class="text-light text-decoration-none me-3">Accueil</a>
+    <a href="#" class="text-light text-decoration-none me-3">Formations</a>
+    <a href="#" class="text-light text-decoration-none">Contact</a>
+  </p>
+</footer>
+
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>
